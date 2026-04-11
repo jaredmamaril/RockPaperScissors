@@ -1,5 +1,7 @@
 console.log("Hello, World!");
 
+testComputerChoice();
+
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -9,7 +11,7 @@ function getComputerChoice() {
 
 function testComputerChoice() {
     const choice = getComputerChoice();
-    console.log("Computer choice:", choice);
+    console.log("Computer choice: " + choice);
 
     if (choice === "rock" || choice === "paper" || choice === "scissors") {
         console.log("Test passed: Valid choice");
