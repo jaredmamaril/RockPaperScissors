@@ -30,4 +30,11 @@ let computerScore = 0;
 function playRound() {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
+
+    if (humanChoice === computerChoice) {
+        console.log("Tie!. No points awarded.");
+    } else if (humanChoice === "rock" && computerChoice === "scissors") {
+        console.log("You win! Rock beats scissors.");
+        humanScore++;
+    }
 }
