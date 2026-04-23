@@ -40,5 +40,11 @@ function playRound() {
         console.log("You lose! " + computerChoice + " beats " + humanChoice);
         computerScore++;
     }
-    
+}
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        console.log("Round " + (i + 1));
+        console.log(playRound());
+    }
 }
