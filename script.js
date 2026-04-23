@@ -47,7 +47,14 @@ function playRound() {
 function playGame() {
     for (let i = 0; i < 5; i++) {
         console.log("Round " + (i + 1));
-        console.log(playRound());
+        playRound();
+        console.log("Current score - You: " + humanScore + " Computer: " + computerScore);
+    }
+
+    if (humanScore > computerScore) {
+        console.log("Congratulations! You won the game!");
+    } else {
+        console.log("Sorry, you lost the game. Better luck next time!");
     }
 }
 
