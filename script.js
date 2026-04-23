@@ -30,8 +30,11 @@ function playRound() {
     const beats = { rock: "scissors",
                     paper: "rock",
                     scissors: "paper" };
-                    
+
     if (humanChoice === computerChoice) {
         console.log("It's a tie!");
+    } else if (beats[humanChoice] === computerChoice) {
+        console.log("You win! " + humanChoice + " beats " + computerChoice);
+        humanScore++;
     }
 }
