@@ -1,7 +1,3 @@
-console.log("Hello, World!");
-
-testComputerChoice();
-
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -36,5 +32,8 @@ function playRound() {
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         console.log("You win! Rock beats scissors.");
         humanScore++;
+    } else if (humanChoice === "rock" && computerChoice === "paper") {
+        console.log("You lose! Paper beats rock.");
+        computerScore++;
     }
 }
