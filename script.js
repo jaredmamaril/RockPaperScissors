@@ -18,6 +18,8 @@ function testComputerChoice() {
 
 function getHumanChoice() {
     let choice = prompt("Enter rock, paper, or scissors: ").toLowerCase();
+    
+    return choice;
 }
 
 let humanScore = 0;
@@ -48,3 +50,5 @@ function playGame() {
         console.log(playRound());
     }
 }
+
+playGame();
