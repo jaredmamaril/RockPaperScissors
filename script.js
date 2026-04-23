@@ -19,3 +19,8 @@ function testComputerChoice() {
         console.log("Test failed: Invalid choice");
     }
 }
+
+function getHumanChoice() {
+    let choice = prompt("Enter rock, paper, or scissors: ").toLowerCase();
+}
+
