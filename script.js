@@ -27,13 +27,11 @@ function playRound() {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
 
+    const beats = { rock: "scissors",
+                    paper: "rock",
+                    scissors: "paper" };
+                    
     if (humanChoice === computerChoice) {
-        console.log("Tie!. No points awarded.");
-    } else if (humanChoice === "rock" && computerChoice === "scissors") {
-        console.log("You win! Rock beats scissors.");
-        humanScore++;
-    } else if (humanChoice === "rock" && computerChoice === "paper") {
-        console.log("You lose! Paper beats rock.");
-        computerScore++;
+        console.log("It's a tie!");
     }
 }
