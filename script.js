@@ -36,5 +36,9 @@ function playRound() {
     } else if (beats[humanChoice] === computerChoice) {
         console.log("You win! " + humanChoice + " beats " + computerChoice);
         humanScore++;
+    } else {
+        console.log("You lose! " + computerChoice + " beats " + humanChoice);
+        computerScore++;
     }
+    
 }
